@@ -34,7 +34,7 @@ if [[ "$#" -ne 1 ]]; then
     exit 1
 fi
 
-clear
+# clear
 cat <<EOF
 
   This script installs the community edition of the Seafile Server on a Centos 7 64bit
