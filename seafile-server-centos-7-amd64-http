@@ -551,6 +551,6 @@ EOF
 
 chmod 600 ${seafile_dir}/aio_seafile-server.log
 
-clear
+# clear
 
 cat ${seafile_dir}/aio_seafile-server.log
