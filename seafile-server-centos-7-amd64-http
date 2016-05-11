@@ -480,7 +480,7 @@ systemctl restart memcached
 systemctl enable memcached
 
 echo "Starting productive Seafile server"
-seafile-server-restart
+/usr/local/sbin/seafile-server-restart
 
 # -------------------------------------------
 # Final report
