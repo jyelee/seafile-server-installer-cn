@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd /opt/seafile/db-backup
+
 USER=root
 PASSWD=aeneinoi
 DATE=`date +%Y%m%d%H%M`

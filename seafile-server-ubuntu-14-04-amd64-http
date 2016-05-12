@@ -345,6 +345,7 @@ mkdir -p ${DEFAULT_CONF_DIR}
 # Configure Seafile WebDAV Server(SeafDAV)
 # -------------------------------------------
 sed -i 's/enabled = .*/enabled = true/' ${DEFAULT_CONF_DIR}/seafdav.conf
+sed -i 's/fastcgi = .*/fastcgi = true/' ${DEFAULT_CONF_DIR}/seafdav.conf
 sed -i 's/share_name = .*/share_name = \/seafdav/' ${DEFAULT_CONF_DIR}/seafdav.conf
 
 # -------------------------------------------
