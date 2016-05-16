@@ -169,6 +169,9 @@ if is_pro; then
         libreoffice-pyuno wqy-microhei-fonts wqy-zenhei-fonts wqy-unibit-fonts -y
 fi
 
+# start memcached on system boot
+systemctl enable memcached
+
 # -------------------------------------------
 # Install nginx
 # -------------------------------------------
@@ -474,13 +477,8 @@ if is_pro; then
 fi
 
 # -------------------------------------------
-# Start seafile server
+# Restart seafile server
 # -------------------------------------------
-echo "Restart memcached and enable it to be started at boot time"
-systemctl restart memcached
-systemctl enable memcached
-
-echo "Starting productive Seafile server"
 /usr/local/sbin/seafile-server-restart
 
 # -------------------------------------------
