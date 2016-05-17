@@ -415,6 +415,13 @@ sed -i 's/share_name = .*/share_name = \/seafdav/' ${DEFAULT_CONF_DIR}/seafdav.c
 # -------------------------------------------
 cat >> ${DEST_SETTINGS_PY} <<EOF
 
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
+    'LOCATION': '127.0.0.1:11211',
+    }
+}
+
 EMAIL_USE_TLS                       = False
 EMAIL_HOST                          = 'localhost'
 EMAIL_HOST_USER                     = ''
